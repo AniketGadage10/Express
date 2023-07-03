@@ -1,0 +1,21 @@
+<html>
+    <!-- id | description | pname | price | qty  | imgpath-->
+    <h1 align="center">UPDATE Product</h1>
+    <body>
+        <form action="/Product" method="get">
+            <table border="1" align="center"  style="width: 50%;font-size: larger;">
+                <tr><td  align="center">
+                <br>
+                Product Id:  <input type="text" name="id" id="id" value="<%=p.id%>" ><br><br>
+                Product description:<input type="text" name="description" id="description" value="<%=p.description%>"><br><br>
+                Product pname:<input type="text" name="pname" id="pname"  value="<%=p.pname%>"><br><br>
+                Product price:  <input type="text" name="price" id="price" value="<%=p.price%>" ><br><br>
+                Product qty:<input type="text" name="qty" id="qty" value="<%=p.qty%>"><br><br>
+                <button type="submit" value="add" >UPDATE Employee</button></td>
+                </tr>
+             </table>
+            </thead>
+        </form>
+    </body>
+</html>
+

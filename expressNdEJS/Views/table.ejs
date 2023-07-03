@@ -1,0 +1,40 @@
+<head>
+    <header><h1 align="center">Product Management System</h1></header>
+</head>
+<body>
+
+    <!--id | description | pname | price | qty  | imgpath-->
+    <table border="1" align="center"  style="width: 50%;font-size: larger;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>description</th>
+                <th>pname</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>imgpath</th>
+                <th>Update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody>
+         <% for(let i=0;i<product.length;i++) {%>
+            <tr id="<%=product[i].id%>">
+                <td id="<%=product[i].id%>"><%=product[i].id%></td>
+                <td id="<%=product[i].id%>"><%=product[i].description%></td>
+                <td id="<%=product[i].id%>"><%=product[i].pname%></td>
+                <td id="<%=product[i].id%>"><%=product[i].price%></td>
+                <td id="<%=product[i].id%>"><%=product[i].qty%></td>
+                <td id="<%=product[i].id%>"><%=product[i].imgpath%></td>
+                <td id="<%=product[i].id%>"><a href="/update/<%=product[i].id%>">Update</button></td>
+             <td id="<%=product[i].id%>"><a href="/delete/<%=product[i].id%>">delete</button></td>
+            <%}%>    
+            </tr>
+        </tbody>
+    </table>
+    <br> 
+    <form action="/addp"  align="center">
+        <button type="submit" value="add">ADD Product</button>
+    </form>  
+</body>
+</html>
